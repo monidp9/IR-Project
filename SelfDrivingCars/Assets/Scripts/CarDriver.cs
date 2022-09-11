@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarDriver : MonoBehaviour
-{
-    private Rigidbody agentRb;
+public class CarDriver : MonoBehaviour {
 
     private float forwardAmount;
     private float turnAmount;
@@ -18,7 +16,6 @@ public class CarDriver : MonoBehaviour
     private Quaternion spawnRot;
     
     private void Awake() {
-        agentRb = GetComponent<Rigidbody>();
         spawnPos = transform.localPosition;
         spawnRot = transform.rotation;
     }
